@@ -7,7 +7,7 @@ public class Taksimetre {
 
     public static void main(String[] args) {
         int km;
-        double pricePerKm, totalPrice=10;
+        double pricePerKm, totalPrice=10.0 ;
         
         Scanner scanner= new Scanner(System.in);
         
@@ -17,7 +17,7 @@ public class Taksimetre {
         
         pricePerKm=(km * 2.2);
         
-        totalPrice= 10 + pricePerKm;
+        totalPrice +=pricePerKm;
         
         if(totalPrice<20) {
             totalPrice=20;
